@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+<link rel="icon" href="../img/icon/icon.jpg">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+<link href="a.css" rel="stylesheet">
+<title>IU Shop - [Twenty Years of Spring]</title>
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>   
+</head>
+    
+<body style="background-color: ghostwhite">
+<!--Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark " style="background-color:lightpink" > <a class="navbar-brand " href="#" ><img  src="../img/icon/icon.jpg" width="40" height="40" ></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+       <li class="nav-item"> <a class="nav-link navbarfont" href="../Home.html">Home </a> </li>
+      <li class="nav-item"> <a class="nav-link navbarfont"  href="../Profile/Profile.html" >Profile</a> </li>
+    </ul>
+  </div>
+</nav>
+
+
+<h1 class="container pt-3 mt-5">CD Album</h1>
+<div class="container-sm mt-5 mb-5">
+<div class="row mt-5">
+        <div class="col"><img  src="../album/20y.jpg" width="500;"></div>
+        <div id="last2"class="col"><h2>IU - [Twenty Years of Spring]</h2><br><h2 class="prince">USD 6.71</h2>
+        <h5> Release Date : 2012/05/15</h5>
+        <h5> Publisher : Loen Entertainment</h5>
+
+        <div id="iushop">
+        <a href="https://www.hanteochart.com/network/family" target="_blank"><img src="../img/IUshop.png" width="100%"></a></div>
+        <h4 class="mt-4">Quantity</h4>
+        
+     <div class="input-group ">
+    <input type="button" value="-" class=" button-minus" data-field="quantity">
+    <input type="number" step="1" max="" value="1" name="quantity" class="quantity-field">
+    <input type="button" value="+" class="button-plus" data-field="quantity">
+    </div>   
+    <button type="button" class="btn btn-secondary btn-lg">Add to Chart</button>
+       
+</div>
+        
+    </div>  
+    </div>
+
+<div class="container-md mb-5">
+    <h3 class="mb-5">Description</h3>
+    <div><img src="../img/imgal/20y.jpg" width="100%"></div>
+    
+    </div>
+
+    
+    
+<!--footer-->
+<div class="container-fluid" style="background-color: lightpink">
+  <div class="container" style="text-align: center;">
+    <div class="row ml-4"  >
+      <div class="iconfb col" > <a href="https://www.facebook.com/profile.php?id=100003228057755" target="_blank"><i class="bi bi-facebook " style="color: white;"></i></a> </div>
+      <div class="iconig col"> <a href="https://www.instagram.com/artful_79/" target="_blank"><i class="bi bi-instagram" style="color: white;"></i></a> </div>
+      <div class="icontw col"> <a href="https://twitter.com/SSleey" target="_blank"><i class="bi bi-twitter" style="color: white;"></i></a> </div>
+    </div>
+  </div>
+  <div class="text-center mt-3 ml-3"> © 2020 IU Shop</div>
+</div>
+    
+<!--JS-->  
+<script>
+    function incrementValue(e) {
+  e.preventDefault();
+  var fieldName = $(e.target).data('field');
+  var parent = $(e.target).closest('div');
+  var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+
+  if (!isNaN(currentVal)) {
+    parent.find('input[name=' + fieldName + ']').val(currentVal + 1);
+  } else {
+    parent.find('input[name=' + fieldName + ']').val(0);
+  }
+}
+
+function decrementValue(e) {
+  e.preventDefault();
+  var fieldName = $(e.target).data('field');
+  var parent = $(e.target).closest('div');
+  var currentVal = parseInt(parent.find('input[name=' + fieldName + ']').val(), 10);
+
+  if (!isNaN(currentVal) && currentVal > 0) {
+    parent.find('input[name=' + fieldName + ']').val(currentVal - 1);
+  } else {
+    parent.find('input[name=' + fieldName + ']').val(0);
+  }
+}
+
+$('.input-group').on('click', '.button-plus', function(e) {
+  incrementValue(e);
+});
+
+$('.input-group').on('click', '.button-minus', function(e) {
+  decrementValue(e);
+});
+
+    </script>
+</body>
+</html>

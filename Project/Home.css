@@ -1,0 +1,122 @@
+/* CSS Document */
+.navbarfont{
+    font-size: 17px;
+}
+
+.icon{
+    width:40px;
+    height:40px;
+}
+#shop{
+    margin-left: 70px;
+}
+.card-title{
+    color:black;
+    text-decoration:none;
+}
+.card-text{
+    color:black;
+    text-decoration:none;
+}
+.card{
+    opacity: 0.8;
+    transition: 0.5s;
+}
+.card:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+#accessories{
+    margin-left: 70px;
+}
+.centered{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 60px;
+  top: 90%;
+}
+.text-video{
+    color:white;
+    font-size:30px;
+}
+.text-video:hover{
+    color:pink;
+}
+.container-video {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.text-main-video{
+    color: white;
+    font-size:40px;
+}
+
+
+.textfooter{
+    padding: 10px;
+    color: white;
+}
+.iconfb{
+    font-size: 30px;
+    margin: 20px;
+}
+
+.iconig{
+    font-size: 30px;
+    margin: 20px;
+    
+}
+.iconyt{
+    font-size: 30px;
+    margin: 20px;
+    
+}
+.icontw{
+    font-size: 30px;
+    margin: 20px;
+
+}
+.imgfooter{
+    padding-top: 10px;
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bi-facebook:hover{
+     background:-webkit-linear-gradient(blue,blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.bi-instagram:hover{
+    background:-webkit-linear-gradient(orange,purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.bi-twitter:hover{
+    background:-webkit-linear-gradient(#1da1f3,#1da1f3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media(max-width: 1200px){
+    .bottom-left{
+        top: 80%;
+    }
+}
+body{
+overflow-x: hidden;
+}
+#text-icon{
+    width: 80%;
+}
